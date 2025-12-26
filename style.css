@@ -27,6 +27,10 @@ nav.mode .navbar-brand {
     color: white !important;
 }
 
+nav.mode .toggler-icon {
+    color: white !important;
+}
+
 nav.mode .navbar-nav li:not(:last-child, :first-child) .nav-link:hover {
     color: rgba(255, 255, 255, 0.85) !important;
 }
