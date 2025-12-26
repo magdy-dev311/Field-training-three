@@ -66,6 +66,11 @@
     body.mode .form-control::placeholder {
         color: #ccc;
     }
+
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 100px;
+    }
 </style>
 
 <body>
@@ -73,7 +78,7 @@
 
 
     <!-- start nav bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5" id="nav">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5 position-fixed z-1 top-0 w-100" id="nav">
         <div class="container">
             <a class="navbar-brand h2 fs-3 " href="#">My Portfolio</a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -106,7 +111,8 @@
     <!-- end nav bar -->
 
     <!-- start hero section -->
-    <div class="container row justify-content-center mx-auto py-y my-5 gap-5 gap-lg-0">
+    <div id="home" class="container row justify-content-center mx-auto py-y my-5 gap-5 gap-lg-0"
+        style="margin-top: 100px !important;">
         <div class="col-md-6 d-flex flex-column justify-content-center align-items-center gap-1">
             <h1 class="text-capitalize">Hi i'm magdy ziad</h1>
             <p class="text-capitalize text-center">front end developer passionate about clean design and code.</p>
@@ -120,7 +126,7 @@
     <!-- end hero section -->
 
     <!-- start skills -->
-    <section class="col-12 col-lg-6 mx-auto my-5 p-3">
+    <section id="skills" class="col-12 col-lg-6 mx-auto my-5 p-3">
         <h2 class="text-center text-capitalize">my skills</h2>
         <div class="d-flex flex-column gap-3 mb-5">
             <div>
@@ -157,7 +163,7 @@
     <!-- end skills -->
 
     <!-- start projects -->
-    <section class="my-5 py-5">
+    <section id="projects" class="my-5 py-5">
         <h2 class="text-center text-capitalize mb-5">projects</h2>
         <div class="row container-fluid justify-content-center gap-3 mx-auto">
             <div class="card p-0 col-11 col-md-5 col-lg-3 border-2 overflow-hidden">
@@ -210,7 +216,7 @@
     <!-- end projects -->
 
     <!-- start contact -->
-    <section class="my-5 py-5">
+    <section id='contact' class="my-5 py-5">
         <h2 class="text-capitalize text-center mb-5">contact me</h2>
         <form class=" p-3 col-12 col-lg-6 mx-auto d-flex flex-column gap-3">
             <input type="text" class="form-control" placeholder="Your Name">
