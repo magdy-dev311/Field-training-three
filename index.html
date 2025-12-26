@@ -5,10 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Field Training Two</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap files/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap-icons-1.13.1/bootstrap-icons.min.css">
 </head>
+
+<style>
+    body,
+    nav,
+    .nav-link,
+    .navbar-brand,
+    nav i {
+        transition: 1s !important;
+    }
+
+    body.mode {
+        background-color: #0B061F;
+        color: white;
+    }
+
+    nav.mode {
+        background-color: #0f172a !important;
+    }
+
+    nav.mode .navbar-nav li:not(:last-child, :first-child) .nav-link {
+        color: rgba(255, 255, 255, 0.5) !important;
+    }
+
+    nav.mode .navbar-nav .nav-link.active {
+        color: rgba(255, 255, 255, 0.85) !important;
+    }
+
+    nav.mode .navbar-brand {
+        color: white !important;
+    }
+
+    nav.mode .toggler-icon {
+        color: white !important;
+    }
+
+    nav.mode .navbar-nav li:not(:last-child, :first-child) .nav-link:hover {
+        color: rgba(255, 255, 255, 0.85) !important;
+    }
+</style>
 
 <body>
 
