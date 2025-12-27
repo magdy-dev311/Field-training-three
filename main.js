@@ -2,6 +2,22 @@ const mode = document.getElementById("mode");
 const nav = document.getElementById("nav");
 const icon = document.getElementById("icon");
 
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbz4j9Z4BMYH8M9WetIuChHlAgWI8UujNSHmOVfeb165-ijJ6mZS1Gt1hdZ-SruekmP9RA/exec";
+
+const form = document.forms["contact-form"];
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => alert("Thank you! Form is submitted"))
+    .then(() => {
+      window.location.reload();
+    })
+    .catch((error) => console.error("Error!", error.message));
+});
+
 if (window.localStorage.getItem("theme") === "dark") {
   document.body.classList.add("mode");
   nav.classList.add("mode");

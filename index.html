@@ -218,11 +218,13 @@
     <!-- start contact -->
     <section id='contact' class="my-5 py-5">
         <h2 class="text-capitalize text-center mb-5">contact me</h2>
-        <form class=" p-3 col-12 col-lg-6 mx-auto d-flex flex-column gap-3">
-            <input type="text" class="form-control inp" placeholder="Your Name">
-            <input type="email" class="form-control inp" placeholder="Your Email">
-            <textarea name="" id="" class="form-control inp" placeholder="Your Message" rows="10"></textarea>
-            <button class="btn btn-primary form-control p-2">Send Message</button>
+        <form method="post" name="contact-form" class=" p-3 col-12 col-lg-6 mx-auto d-flex flex-column gap-3"
+            action="https://script.google.com/macros/s/AKfycbz4j9Z4BMYH8M9WetIuChHlAgWI8UujNSHmOVfeb165-ijJ6mZS1Gt1hdZ-SruekmP9RA/exec">
+            <input type="text" class="form-control inp" placeholder="Your Name" name="name">
+            <input type="email" class="form-control inp" placeholder="Your Email" name="email">
+            <textarea id="message" class="form-control inp" placeholder="Your Message" rows="10"
+                name="message"></textarea>
+            <button type="submit" class="btn btn-primary form-control p-2">Send Message</button>
 
         </form>
     </section>
