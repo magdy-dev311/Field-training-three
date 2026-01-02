@@ -7,6 +7,9 @@
     <title>Field Training Two</title>
     <link rel="stylesheet" href="bootstrap files/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <style>
@@ -71,6 +74,30 @@
         scroll-behavior: smooth;
         scroll-padding-top: 100px;
     }
+
+    .scroll {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ccc;
+        position: fixed;
+        bottom: 10px;
+        right: -30px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .scroll.show {
+        right: 10px;
+    }
+
+    body.mode .scroll {
+        background-color: #1a2746 !important;
+        color: rgba(255, 255, 255, 0.5) !important;
+    }
 </style>
 
 <body>
@@ -123,6 +150,8 @@
                 style="width: 300px;height: 300px;" class="rounded-circle">
         </div>
     </div>
+
+    <span class="scroll"><i class="fa-solid fa-angles-up"></i></span>
     <!-- end hero section -->
 
     <!-- start skills -->

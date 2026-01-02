@@ -43,3 +43,16 @@ mode.onclick = (e) => {
     window.localStorage.setItem("theme", "light");
   }
 };
+
+let scrol = document.querySelector(".scroll");
+
+window.onscroll = () => {
+  if (this.scrollY >= 200) {
+    scrol.classList.add("show");
+  } else {
+    scrol.classList.remove("show");
+  }
+};
+scrol.onclick = () => {
+  window.scrollTo(0, 0);
+};
